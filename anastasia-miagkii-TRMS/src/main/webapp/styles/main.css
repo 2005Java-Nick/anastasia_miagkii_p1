@@ -1,0 +1,86 @@
+ body {
+    background-image: url('https://sun6-19.userapi.com/ZyavZIXfQQtuTw2HRGJVX8SppR37GFwe9G70oA/OQHA53JhQCQ.jpg'); 
+    background-color: #F26A25;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; 
+    font-family: monospace;
+ }
+
+
+   .top > a > img {
+    padding: 0px;
+    margin: 5px 5px 0px 15px;
+    border: 0;
+    background-color: #dddddd;
+   }
+
+   .top{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:white;
+   }
+
+   .apply-content {
+    margin: 200px 0px 0px 5px;
+    padding: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    background:white;
+    opacity: 0.85;
+    position: static;
+    width: 90%;
+    height:100%;
+
+   }
+
+
+.menu-content{
+   
+    margin: 2px;
+    padding: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    background:white;
+    opacity: 0.85;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+
+}
+
+div.menu-content {
+    width: 400px;
+    height:350px;
+   box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2), 20px 6px 20px 20px rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+
+  div.menu-content#registration{
+    width: 430px;
+    height:500px;
+
+  }
+
+.button {
+    
+    background-color: #F26A25;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 15px;
+    cursor: pointer;
+  }
+

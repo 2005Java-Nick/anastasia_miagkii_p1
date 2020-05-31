@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sign Up</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="resources/favicon.ico" type="image/ico" />
+</head>
+
+<body>
+    <header class="top">
+        <a href="home.html">
+        <img src="resources/revature.jpg" alt="Revature" style="width:175px;height:75px;">
+        <script>
+            window.onbeforeunload = function() {
+                return 'Your changes will be lost!';
+              };
+            </script>
+    </a>
+    </header>
+
+
+    <div class="menu-content" id="registration">
+       <p><img src="resources/register.JPG" alt="content" style="width:275px;height:110px;"></p>
+       
+       
+       <form action= "register" method="post">  
+        Full Name<span style="color: red">*</span> <input type="text" name="employeeName" required> <br/><br/> 
+        Username<span style="color: red">*</span> <input type="text" name="employeeUsername" required> <br/><br/> 
+        Password<span style="color: red">*</span> <input type="password" name="employeePassword" required> <br/><br/>  
+        Email<span style="color: red">*</span> <input type="text" name="employeeEmail" required> <br/><br/>  
+        Location<span style="color: red">*</span>  
+        <select name="employeeLocation">  
+        <option>Reston, VA</option>  
+        <option>Tampa, FL</option>  
+        <option>New York, NY</option> 
+        <option>Dallas, TX</option> 
+        <option>Orlando, FL</option>
+        <option>Morgantown, WV</option>  
+        </select>  
+    <p style = "color:red"><em>Fields marked with an asterisk </br> are mandatory!</em></p>
+
+  <input type="submit" class="button" value="Register">
+</form>
+
+
+        
+
+    </div>
+
+    <script src="scripts/main.js" type="text/javascript"></script>
+</body>
+
+</html>
