@@ -13,12 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 import com.revature.trms.dao.EmployeeDAO;
 import com.revature.trms.model.Employee;
 
-/**
- * Servlet implementation class EmployeeServlet
- */
 
-@WebServlet("/register")
-public class EmployeeServlet extends HttpServlet {
+//@WebServlet("/register")
+public class Register extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	private EmployeeDAO employeeDao = new EmployeeDAO();
@@ -26,7 +23,7 @@ public class EmployeeServlet extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public EmployeeServlet() {
+    public Register() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -36,7 +33,7 @@ public class EmployeeServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+	//	response.getWriter().append("Served at: ").append(request.getContextPath());
 	
 		RequestDispatcher dispatcher = request.getRequestDispatcher("signup.html");
 		dispatcher.forward(request, response);
@@ -47,6 +44,10 @@ public class EmployeeServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
+		System.out.println("Register servlet was called!");
+		
 		String fullName = request.getParameter("employeeName");
 		String userName = request.getParameter("employeeUsername");
 		String password = request.getParameter("employeePassword");
@@ -67,8 +68,8 @@ public class EmployeeServlet extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SQLException e) {
-			RequestDispatcher dispatcher = request.getRequestDispatcher("error.html");
-			dispatcher.forward(request, response);
+//			RequestDispatcher dispatcher = request.getRequestDispatcher("error.html");
+//			dispatcher.forward(request, response);
 			System.out.println("Unable to register employee");
 			e.printStackTrace();
 		}

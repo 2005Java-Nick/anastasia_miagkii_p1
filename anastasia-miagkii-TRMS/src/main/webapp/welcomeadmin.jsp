@@ -1,9 +1,17 @@
+<%@page import="com.revature.trms.servlet.Login"%> 
+<%@page import="com.revature.trms.dao.ValidateDAO"%> 
 <!DOCTYPE html>
 <html>
 <head>
+<%
+	String name1 = (String) session.getAttribute("userName");
+%>
+<%
+	String fullname = ValidateDAO.getEmployeeName(name1);
+%>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Welcome!</title>
+    <title>Management Menu</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
     <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon" />
@@ -19,13 +27,12 @@
 
 
     <div class="menu-content">
-    <%!
-    String empName = "ADMIIIININNINNNINI";
- 	 %>
-        <p>Welcome <%=empName %></p>
 
-        <p><a href="home.html" class="button">SPECIAL ADMIN MENU</a></p>
-        <p><a href="home.html" class="button">OH YEAAAAAH</a></p>
+	<br>
+        <h2>Welcome, <%=fullname %></h2>
+       <br>
+        <p><a href="alldatabaseforms.jsp" class="button">VIEW ALL FORMS</a></p>
+        <br>
         <p><a href="home.html" class="button">LOG OUT</a></p>
 
     </div>

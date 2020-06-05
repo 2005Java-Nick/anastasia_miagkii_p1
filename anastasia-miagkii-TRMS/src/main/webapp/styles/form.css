@@ -1,4 +1,4 @@
- body {
+body {
     background-image: url('https://sun6-19.userapi.com/ZyavZIXfQQtuTw2HRGJVX8SppR37GFwe9G70oA/OQHA53JhQCQ.jpg'); 
     background-color: #F26A25;
     background-repeat: no-repeat;
@@ -8,25 +8,25 @@
  }
 
 
- table {
-  border-collapse: collapse;
-}
 
 table, th, td {
   border: 1px solid black;
+  position: center;
 }
 
-th, td {
-  padding: 10px;
-}
 
 th {
   background-color:#F26A25;
   color: white;
 }
 
+td {
+  background-color:white;
+  color: black;
+}
 
-   .top > a > img {
+
+.top > a > img {
     padding: 0px;
     margin: 5px 5px 0px 15px;
     border: 0;
@@ -42,21 +42,7 @@ th {
     background-color:white;
    }
 
-   .apply-content {
-    margin: 200px 0px 0px 5px;
-    padding: 3px;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 15px;
-    background:white;
-    opacity: 0.85;
-    position: static;
-    width: 90%;
-    height:100%;
-
-   }
-
-
+   
 .menu-content{
    
     margin: 2px;
@@ -74,24 +60,33 @@ th {
 
 }
 
+
+.form-content{
+   
+  margin: 2px;
+  padding: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 15px;
+  background:white;
+  opacity: 0.85;
+  position: absolute;
+  bottom: 100px;
+  left: 30%;
+  margin-right: -50%;
+  width: 600px;
+    height:215px;
+ 
+}
+
+
 div.menu-content {
-    width: 400px;
+    width: 1200px;
     height:350px;
    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2), 20px 6px 20px 20px rgba(0, 0, 0, 0.19);
     text-align: center;
   }
 
-  div.menu-content#registration{
-    width: 430px;
-    height:525px;
-
-  }
-
-  div.menu-content#viewform{
-    width: 700px;
-    height:400px;
-
-  }
 
 .button {
     

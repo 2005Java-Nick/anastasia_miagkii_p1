@@ -1,9 +1,9 @@
-package com.revature.trms.servlet;
+package com.revature.trms.dao;
 
 import java.sql.*;
 
 
-public class Validate {
+public class ValidateDAO {
 	
     public static boolean checkUser(String username, String pass, String level) 
     {
@@ -14,8 +14,8 @@ public class Validate {
         	Class.forName("org.postgresql.Driver");
 
             //creating connection with the database
-        	Connection con = DriverManager.getConnection("","","");
-        	PreparedStatement ps = con.prepareStatement("select * from trms_lvl_employee where empUsername=? and empPassword=? and empLevel =?");
+           Connection connection = DriverManager.getConnection(DATABASEVALUES);
+            PreparedStatement ps = con.prepareStatement("select * from trms_lvl_employee where empUsername=? and empPassword=? and empLevel =?");
             ps.setString(1, username);
             ps.setString(2, pass);
             ps.setString(3, level);
@@ -32,7 +32,7 @@ public class Validate {
     
 public static String getEmployeeName(String username) throws SQLException, ClassNotFoundException {
 	Class.forName("org.postgresql.Driver");
-	Connection conn = DriverManager.getConnection("","","");
+	Connection connection = DriverManager.getConnection(DATABASEVALUES);
 		PreparedStatement stmt = null;
 		ResultSet resultSet = null;
 		String employeeName = "";

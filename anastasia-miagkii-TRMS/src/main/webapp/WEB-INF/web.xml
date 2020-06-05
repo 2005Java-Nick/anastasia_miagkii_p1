@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
-  <display-name>anastasia-miagkii-TRMS</display-name>
+  <display-name>TRMS</display-name>
   <welcome-file-list>
     <welcome-file>home.html</welcome-file>
     <welcome-file>home.htm</welcome-file>
@@ -9,15 +9,17 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  
   <servlet>
     <description></description>
-    <display-name>EmployeeServlet</display-name>
-    <servlet-name>EmployeeServlet</servlet-name>
-    <servlet-class>com.revature.trms.servlet.EmployeeServlet</servlet-class>
+    <display-name>Register</display-name>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.revature.trms.servlet.Register</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>EmployeeServlet</servlet-name>
-    <url-pattern>/EmployeeServlet</url-pattern>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/register</url-pattern>
   </servlet-mapping>
   
   <servlet>
@@ -40,5 +42,29 @@
     <servlet-name>EmployeeFormServlet</servlet-name>
     <url-pattern>/EmployeeFormServlet</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ViewEmployeeForm</display-name>
+    <servlet-name>ViewEmployeeForm</servlet-name>
+    <servlet-class>com.revature.trms.servlet.EmployeeForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewEmployeeForm</servlet-name>
+    <url-pattern>/viewform</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>StatusChange</display-name>
+    <servlet-name>StatusChange</servlet-name>
+    <servlet-class>com.revature.trms.servlet.StatusChange</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StatusChange</servlet-name>
+    <url-pattern>/statusChange</url-pattern>
+  </servlet-mapping>
+  
+
 
 </web-app>

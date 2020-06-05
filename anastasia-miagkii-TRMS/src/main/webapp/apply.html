@@ -23,7 +23,7 @@
     </br><p>APPLY FOR REIMBURSEMENT</p>
        
        
-       <form action= "apply" method="post"> 
+       <form action= "EmployeeFormServlet" method="post"> 
 
         <label for="eventType">Event Type   </label>
         <select name="eventType">  
@@ -35,15 +35,15 @@
         <option>Other</option>
         </select> </br></br>
 
-        <label for="submissionDate">Submission date   </label>
-        <input type="date" id="start" name="submissionDate"
+        <label for="examDate">Examination date   </label>
+        <input type="date" id="start" name="examDate"
        value="2020-06-05"
-       min="2020-06-05" max="2021-06-05"></br></br>
+       min="2019-06-05" max="2020-06-05"></br></br>
 
        <label for="eventDate">Event date    </label>
         <input type="date" id="start" name="eventDate"
        value="2020-06-05"
-       min="2020-06-05" max="2021-06-05"></br></br>
+       min="2019-06-05" max="2020-06-05"></br></br>
 
        <label for="cost">Cost   </label>
        <input type="text" name="cost" required> <br/><br/>
@@ -56,17 +56,20 @@
         <option>60%-69%</option>
         <option>50%-59%</option>
         <option>Pass</option>
+        <option>Attended</option>
         </select> </br></br>
+         <label for="passinggrade">Passing Grade   </label>
+       <input type="text" name="passinggrade" required> <br/><br/>
 
         <label for="fileUpload">Upload File   </label>
         <input type="file" name="fileToUpload" id="fileToUpload"></br></br>
 
-        <label for="description">Description   </label>
+        <label for="eventDescription">Description   </label>
         <textarea name="eventDescription" rows="3" cols="25">
         </textarea><br/><br/>      
     
 
-  <input type="submit" class="button" value="apply">
+  <input type="submit" class="button" value="APPLY">
 </form>
 
 

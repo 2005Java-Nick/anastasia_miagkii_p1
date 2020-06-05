@@ -8,23 +8,32 @@ public class Employee {
 	private static String employeeEmail;
 	private static String employeeLocation;
 	private static String eventType;
-	private static String submissionDate;
+	private static String examDate;
+	
+	
+	public static String getExamDate() {
+		return examDate;
+	}
+	public static void setExamDate(String examDate) {
+		Employee.examDate = examDate;
+	}
 	private static String eventDate;
 	private static String cost;
+	public static String getPassingGrade() {
+		return passingGrade;
+	}
+	public static void setPassingGrade(String passingGrade) {
+		Employee.passingGrade = passingGrade;
+	}
 	private static String gradeCriteria;
 	private static String description;
+	private static String passingGrade;
 	
 	public static String getEventType() {
 		return eventType;
 	}
 	public static void setEventType(String eventType) {
 		Employee.eventType = eventType;
-	}
-	public static String getSubmissionDate() {
-		return submissionDate;
-	}
-	public static void setSubmissionDate(String submissionDate) {
-		Employee.submissionDate = submissionDate;
 	}
 	public static String getEventDate() {
 		return eventDate;
